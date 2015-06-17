@@ -1,0 +1,13 @@
+Items:
+
+<ol>
+<% @items.each do |item| %>
+<li>
+<%= item.title %><br/>
+<%= item.description %><br/>
+<%= image_tag item.picture.url(:medium), :class => 'picture' %>
+</li>
+<% end %>
+</ol>
+
+<%= link_to 'New Item', items_new_path %>

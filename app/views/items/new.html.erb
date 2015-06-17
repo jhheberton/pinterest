@@ -1,0 +1,13 @@
+<%= form_for(Item.new, {:url => "/items"} ) do |f| %>
+
+<%= f.label :title %>:
+<%= f.text_field :title %>
+<br/>
+<%= f.label :description %>:
+<%= f.text_field :description %>
+<br/>
+<%= f.label :picture %><i>(use an image with square dimensions)</i>
+<%= f.file_field :picture %>
+<br/>
+<%= f.submit %>
+<% end %>

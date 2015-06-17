@@ -1,0 +1,10 @@
+User's items:
+
+
+<ol>
+<% @items.each do |item| %>
+<li><%= item.title %><br/>
+<%= item.description %>
+</li>
+<% end %>
+</ol>
